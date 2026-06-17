@@ -220,7 +220,7 @@
 
     function checkStoryTriggers(pageId) {
         // Stage 1: Allen appears on Level 0
-        if (pageId === "level-0" && state.storyStage === 0 && !STORY.contactHas("allen")) {
+        if (pageId === "level-0" && state.storyStage === 0) {
             setTimeout(function() {
                 triggerStage(1);
             }, 3000); // 3 seconds after viewing Level 0
