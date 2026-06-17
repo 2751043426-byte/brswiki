@@ -167,10 +167,19 @@
         editNotice.classList.add("expanded");
         editNotice.querySelector(".edit-author").textContent = author;
         editNotice.querySelector(".edit-time").textContent = time;
-        editNotice.querySelector(".edit-preview").textContent = previewText || "";
+        var previewEl = editNotice.querySelector(".edit-preview");
+        previewEl.textContent = previewText || "";
+        previewEl.style.cursor = "pointer";
+        previewEl.style.display = "block";
+        previewEl.style.padding = "5px";
+        previewEl.style.background = "#f0ebe0";
+        previewEl.style.borderRadius = "4px";
+        previewEl.style.marginTop = "5px";
+        previewEl.style.fontSize = "12px";
 
         if (onExpand) {
-            editNotice.querySelector(".edit-preview").addEventListener("click", function() {
+            previewEl.addEventListener("click", function(e) {
+                e.stopPropagation();
                 onExpand();
             });
         }
@@ -244,6 +253,12 @@
                             triggerStage(2);
                         }
                     );
+                    // Also auto-trigger stage 2 after 5 seconds so player doesnt miss it
+                    setTimeout(function() {
+                        if (state.storyStage < 2) {
+                            triggerStage(2);
+                        }
+                    }, 5000);
                 }, 500);
                 break;
 
