@@ -23,27 +23,27 @@ const STORY = {
             role: "Wanderer",
             level: "Level 0",
             status: "alive",
-            firstMessage: `Hello? Is anyone there? I can see the text appearing...
-If you're reading this, please respond. My name is Allen. I've been trapped in this place for three days now.
-It's all yellow walls. Endless rooms. The lights are always buzzing. There's water on the floor. I can't find a way out.
-I think... I think this is the Backrooms. Level 0, maybe?
-If you're M.E.G., please tell me how to get to Level 1. I need to find other people.
-My supplies are running low.`,
-            followUp1: `Wait, you're responding? Thank god.
-I thought I was the only one who could send messages through this thing.
-So... you said you're not M.E.G.? But how else would this channel work?
-Never mind. Please, just help me. What do I need to do to find Level 1?
-I keep seeing the same pattern of rooms. It's like the walls rearrange when I'm not looking.`,
-            followUp2: `There's something I found. On one of the walls, someone carved:
-"DON'T PANIC"
-What does that mean? Is it a warning? A clue?
-Also... I think I heard something in the distance. Like, actual voices. Human voices.
-Could there be other people nearby?`,
-            deathMessage: `I found her! She's--
-Wait, her leg... there's so much blood.
-She says she's been walking for three days. The lights are red... that's not Level 0, is it?
-Stay here, I'll go find the way out. Follow my voice.
-...`,
+            firstMessage: `你好？有人在吗？我能看到文字出现了……
+如果你能看到这条消息，请回复。我叫 Allen。我被困在这个地方三天了。
+全是黄色的墙壁。无尽的房间。灯一直在嗡嗡响。地上有水。我找不到出口。
+我想……我想这就是后室。可能是 Level 0？
+如果你是 M.E.G. 的，请告诉我怎么去 Level 1。我需要找到其他人。
+我的补给快用完了。`
+            followUp1: `等等，你在回复？谢天谢地。
+我还以为只有我能通过这东西发消息。
+所以……你说你不是 M.E.G. 的人？但那这个频道怎么会工作？
+算了。求你了，帮帮我吧。我要怎么做才能找到 Level 1？
+我一直看到同样的房间排列。我不在看的时候，墙好像在重新排列。`
+            followUp2: `我发现了东西。在一面墙上，有人刻着：
+"DON'T PANIC"（不要慌张）
+什么意思？是警告还是线索？
+还有……我好像听到远处有动静。像是人声。真正的人声。
+附近会有其他人吗？`
+            deathMessage: `我找到她了！她在——
+等等，她的腿……好多血。
+她说她走了三天了。灯是红色的……那不是 Level 0 对吧？
+待在这里，我去找出口。跟着我的声音——
+……`
             deathNotice: `Allen's signal has been lost. We attempted contact but received no response.
 Status: Deceased.
 Cause: Unknown. Last known location: Sector 7-Gamma, Level 0.`
@@ -52,37 +52,37 @@ Cause: Unknown. Last known location: Sector 7-Gamma, Level 0.`
         dr_lin: {
             name: "Dr. Lin",
             role: "M.E.G. Medical Officer, 3rd Exploration Team",
-            firstMessage: `This is Dr. Lin, M.E.G. Third Exploration Team, Medical Division.
-I've been monitoring the distress channel. It appears Allen has made contact with an external party.
-Are you new to M.E.G.? I didn't recognize the signal signature.
-Regardless, Allen's situation is critical. He reports dehydration and possible infection.
-I need you to relay the following to him:
-1. Stay away from standing water
-2. Follow any sound of human voices cautiously
-3. Look for the phrase "Don't Panic" - it's a M.E.G. trail marker
+            firstMessage: `我是 Dr. Lin，M.E.G. 第三勘探队医疗官。
+我一直在监控求救频道。看来 Allen 已经联系上了外部人员。
+你是 M.E.G. 的新成员吗？我没有识别到这个信号签名。
+不管怎样，Allen 的情况很危急。他报告说脱水并且可能感染。
+我需要你转告他以下内容：
+1. 远离积水
+2. 谨慎跟随任何人类声音
+3. 寻找 "Don't Panic" 这个词——这是 M.E.G. 的路标
 
-Here is the secure access code for Level 1 sector mapping:
+以下是 Level 1 区域的安全访问码：
 Password: Alderate
 
-Enter this code to unlock Level 1 safe passage coordinates.`,
+输入此密码以解锁 Level 1 安全通行坐标。`
             puzzle1: {
                 encoded: "UGFzc3dvcmQ6IEFsZGVyYXRl",
                 type: "base64",
                 hint: "This looks like base64 encoding. Try decoding it."
             },
-            followUp1: `Good. The password has been verified.
-Now listen carefully. Allen needs to find the northwest corridor of Level 0.
-There's a wall section that sounds hollow when tapped. Behind it is a noclip point to Level 1.
-Tell him to follow the sound of voices. They'll lead him to the corridor.
-Also, I need you to check something. Have you seen any unusual entries in the Wiki recently?
-Something about "reality penetration"?`,
-            deathMessage: `Both signals are gone. Allen and Xiaoya...
-I've analyzed the last transmission data. The coordinates converge on a single point.
-I don't know how to tell you this... but that point is YOUR location.
-You need to understand something. This channel doesn't work the way you think it does.
-It's not a website feature. It's not a simulation.
-The messages are real. The people are real. And they've been waiting for you to help them.
-...`,
+            followUp1: `好的，密码已验证。
+现在仔细听。Allen 需要找到 Level 0 的西北走廊。
+有一面墙敲击时会发出空洞的声音。后面是通往 Level 1 的 noclip 点。
+告诉他跟着声音走，会带他到走廊。
+另外，我需要你查一下。你最近有没有在 Wiki 上看到什么不寻常的条目？
+关于"现实渗透"的？`
+            deathMessage: `两个信号都消失了。Allen 和小雅……
+我已经分析了最后的传输数据。坐标汇聚到一个点上。
+我不知道该怎么告诉你……但那个点就是你的位置。
+你需要理解一件事。这个频道不是你想象的那样工作的。
+它不是网站功能。也不是模拟。
+消息是真实的。人也是真实的。他们一直在等你帮忙。
+……`
             deathNotice: `Dr. Lin's signal lost during transmission analysis.
 Status: Deceased.
 Note: Last transmission contained critical coordinate data pointing to the observer's location.`
@@ -91,30 +91,30 @@ Note: Last transmission contained critical coordinate data pointing to the obser
         xiaoya: {
             name: "Xiaoya (小雅)",
             role: "Wanderer",
-            firstMessage: `Hi... I don't know who you are, but Allen mentioned he'd be in contact with M.E.G.
-Is that you? Are you M.E.G.?
-My name is Xiaoya. I'm... I'm in China. Or I was, before...
-I woke up in a room with red lights. My leg is badly injured. I can't walk properly.
-Allen told me about the "Don't Panic" sign. Can you help me find him?
-I think we're in similar places, but the lights here are different. Red instead of yellow.
-Here's a clue about where I am. I found this scratched on the wall:
+            firstMessage: `你好……我不知道你是谁，但 Allen 提到他会联系 M.E.G.。
+是你吗？你是 M.E.G. 的人吗？
+我叫小雅。我……我在中国。或者说以前是……
+我在一个有红灯的房间里醒来。我的腿受了重伤，无法正常行走。
+Allen 告诉过我 "Don't Panic" 的标志。你能帮我找到他吗？
+我想我们在相似的地方，但这里的灯不一样。是红色的而不是黄色的。
+这里有关于我位置的线索。我在墙上发现了这个：
 Grz n qnffvp dhvpx, lbh ernq urer va n gnpxrq.
-I don't understand what it means. Can you help me decode it?`,
+我不明白是什么意思。你能帮我解码吗？`
             puzzle1: {
                 encoded: "Grz n qnffvp dhvpx, lbh ernq urer va n gnpxrq.",
                 type: "rot13",
                 hint: "Try ROT13 cipher. It shifts letters by 13 positions."
             },
-            followUp1: `Allen found me. He came running when he heard my voice.
-He's such a brave man. He helped me bandage my wound with his shirt.
-But I can hear something outside. Many footsteps. Many... voices.
-Not human voices. Something else.
-Allen, go! I need you to leave! Find the way out!
-...Thank you for everything. Whoever you are.
-I always wanted to drink a bowl of hot soup when I get back home.`,
-            deathMessage: `[Connection lost - transmission interrupted by unknown source]
-[Last signal received: 2024-11-03 03:47:22 UTC]
-Location: Unknown. Possible Level 0 variant.`,
+            followUp1: `Allen 找到我了。他听到我的声音就跑过来了。
+他真是个勇敢的人。他用衬衫帮我包扎了伤口。
+但我听到外面有动静。很多脚步声。很多……声音。
+不是人声。是别的东西。
+Allen，走！我需要你离开！找到出口！
+……谢谢你所做的一切。无论你是谁。
+我一直想回家喝一碗热汤。`
+            deathMessage: `[连接中断 - 传输被未知来源打断]
+[最后接收到的信号：2024-11-03 03:47:22 UTC]
+位置：未知。可能是 Level 0 的变体。`
             deathNotice: `Xiaoya's signal terminated. Last known position: adjacent to Allen's sector.
 Status: Deceased.
 Note: Signal interference suggests entity proximity.`
@@ -123,37 +123,37 @@ Note: Signal interference suggests entity proximity.`
         marcus: {
             name: "Marcus Chen",
             role: "M.E.G. Explorer, 7th Team Leader",
-            firstMessage: `Hey, I'm Marcus. M.E.G. Seventh Exploration Team.
-Dr. Lin told me you've been helping our people. Listen, I need to ask you something important.
-In your... Wiki... has there been any mention of "reality penetration" phenomena?
-Not the standard articles. I mean, has anything appeared that shouldn't be there?
-Like, entries about real-world locations? Or dates that don't match?
-Check the source code of the pages too. Sometimes we hide notes in the HTML comments.
-I'm asking because Dr. Lin's last transmission showed something I can't explain.
-All the distress signals - Allen's, Xiaoya's, Dr. Lin's - they all had the same coordinate signature.
-And that signature... it matched a location in the Frontrooms.
-Specifically, Shanghai, China. November 3rd, 2024.`,
+            firstMessage: `你好，我是 Marcus，M.E.G. 第七勘探队。
+Dr. Lin 告诉我你一直在帮助我们的人。听着，我需要问你一个重要问题。
+在你的……Wiki……有没有提到过"现实渗透"现象？
+不是标准文章。我是说，有没有出现不该出现的东西？
+比如关于现实世界地点的条目？或者日期对不上的？
+也检查一下页面的源代码。有时候我们会把笔记藏在 HTML 注释里。
+我问是因为 Dr. Lin 的最后一次传输显示了无法解释的东西。
+所有的求救信号——Allen 的、小雅的、Dr. Lin 的——它们都有相同的坐标签名。
+而这个签名……匹配到了 Frontrooms 的一个位置。
+具体来说，是中国上海。2024年11月3日。`
             puzzle1: {
                 encoded: "<!-- Real-world penetration event #47: 2024-11-03\nSubject: Shanghai, China\nSymptoms: Persistent dreams of yellow rooms, hearing fluorescent light humming\nConclusion: Suspected early-stage penetration -->",
                 type: "html_comment",
                 hint: "Right-click the page and select 'View Page Source'. Look for HTML comments."
             },
-            followUp1: `You found it. So it's real.
-Listen to me carefully. You need to understand what's happening.
-Why do you think you can receive these messages? A regular Wiki website doesn't have a real-time messaging feature.
-How are you talking to Allen? To Xiaoya?
-You've never left this page, have you?
-You opened your computer, sat down, and started browsing.
-And then... you don't remember what happened next, do you?
-Think about it. When did you first notice the messages? What were you doing before that?
-Do you remember your life outside of this website?`,
-            deathMessage: `I'm detecting anomalous signals. Something is--
-No, someone is approaching my position. Dr. Lin was right. I was too late.
-Remember: you were never in the Frontrooms.
-You've always been here. You just... didn't remember.
-I'm sorry I couldn't--
-[Connection terminated]
-[SIGNAL LOST]`,
+            followUp1: `你找到了。所以它是真的。
+仔细听我说。你需要理解发生了什么。
+你为什么能收到这些消息？普通的 Wiki 网站没有实时消息功能。
+你是怎么和 Allen 说话的？和小雅？
+你从没离开过这个页面，对吧？
+你打开电脑，坐下，开始浏览。
+然后……你不记得接下来发生了什么，对吧？
+想想看。你是什么时候第一次注意到这些消息的？在那之前你在做什么？
+你还记得你在这个网站之外的生活吗？`
+            deathMessage: `我检测到了异常信号。有东西在——
+不，有人正在接近我的位置。Dr. Lin 是对的。我太迟了。
+记住：你从未在 Frontrooms。
+你一直在这里。你只是……不记得了。
+对不起，我没能——
+[连接终止]
+[信号丢失]`
             deathNotice: `Marcus Chen - Signal lost during field operation.
 Last transmission: Anomalous entity detection. Position compromised.
 Status: Deceased.
