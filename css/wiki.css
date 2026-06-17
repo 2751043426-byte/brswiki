@@ -1,0 +1,27 @@
+.wiki-header { border-bottom: 2px solid #c4bba0; margin-bottom: 20px; padding-bottom: 10px; }
+.wiki-header h1 { font-size: 28px; color: #3a2a1a; }
+.wiki-header .breadcrumb { font-size: 12px; color: #8a7a6a; margin-top: 5px; }
+.wiki-infobox {
+    float: right; width: 260px; margin: 0 0 20px 20px;
+    border: 1px solid #c4bba0; background: #faf7ee;
+    padding: 15px; font-size: 13px;
+}
+.wiki-infobox h3 { text-align: center; margin-bottom: 10px; font-size: 15px; color: #3a2a1a; }
+.wiki-infobox table { width: 100%; }
+.wiki-infobox td { padding: 4px 2px; vertical-align: top; }
+.wiki-infobox td:first-child { font-weight: bold; width: 80px; color: #5a4a3a; }
+.wiki-body { line-height: 1.9; font-size: 14px; }
+.wiki-body h2 { font-size: 20px; margin: 25px 0 10px; color: #3a2a1a; border-bottom: 1px solid #d4cbb0; padding-bottom: 5px; }
+.wiki-body h3 { font-size: 16px; margin: 15px 0 8px; color: #4a3a2a; }
+.wiki-body p { margin-bottom: 12px; }
+.wiki-body ul { margin: 10px 0 15px 20px; }
+.wiki-body li { margin-bottom: 5px; }
+.wiki-body .warning { background: #fff3cd; border-left: 4px solid #ffc107; padding: 12px 15px; margin: 15px 0; font-size: 13px; }
+.wiki-body .info { background: #d1ecf1; border-left: 4px solid #17a2b8; padding: 12px 15px; margin: 15px 0; font-size: 13px; }
+.wiki-body .danger { background: #f8d7da; border-left: 4px solid #dc3545; padding: 12px 15px; margin: 15px 0; font-size: 13px; }
+.wiki-footer { margin-top: 40px; padding-top: 15px; border-top: 1px solid #d4cbb0; font-size: 11px; color: #8a7a6a; }
+.wiki-footer .edit-history { margin-top: 10px; }
+.wiki-footer .edit-entry { padding: 4px 0; cursor: pointer; color: #6a5a4a; }
+.wiki-footer .edit-entry:hover { color: #3a2a1a; }
+.wiki-footer .edit-entry.expanded .edit-msg { display: block; }
+.wiki-footer .edit-msg { display: none; margin-top: 5px; padding: 8px; background: #f0ebe0; border-radius: 4px; font-size: 12px; color: #5a4a3a; line-height: 1.6; }

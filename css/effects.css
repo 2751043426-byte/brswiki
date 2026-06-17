@@ -1,0 +1,168 @@
+/* Visual effects for horror progression */
+
+/* Stage 1: Mild flicker */
+.flicker-mild {
+    animation: flickerMild 4s infinite;
+}
+@keyframes flickerMild {
+    0%, 100% { opacity: 1; }
+    92% { opacity: 1; }
+    93% { opacity: 0.8; }
+    94% { opacity: 1; }
+    96% { opacity: 0.9; }
+    97% { opacity: 1; }
+}
+
+/* Stage 2: Moderate flicker + slight text jitter */
+.flicker-moderate {
+    animation: flickerMod 3s infinite;
+}
+@keyframes flickerMod {
+    0%, 100% { opacity: 1; }
+    85% { opacity: 1; }
+    86% { opacity: 0.7; }
+    87% { opacity: 1; }
+    89% { opacity: 0.85; }
+    90% { opacity: 1; }
+    92% { opacity: 0.75; }
+    93% { opacity: 1; }
+}
+
+/* Stage 3: Heavy distortion */
+.flicker-heavy {
+    animation: flickerHeavy 2s infinite;
+}
+@keyframes flickerHeavy {
+    0%, 100% { opacity: 1; }
+    80% { opacity: 1; }
+    81% { opacity: 0.5; }
+    82% { opacity: 1; }
+    84% { opacity: 0.6; }
+    85% { opacity: 1; }
+    87% { opacity: 0.4; }
+    88% { opacity: 1; }
+    90% { opacity: 0.7; }
+    91% { opacity: 1; }
+}
+
+/* Text distortion */
+.text-distort {
+    animation: textDistort 0.5s ease;
+}
+@keyframes textDistort {
+    0% { transform: translateX(0); filter: blur(0); }
+    25% { transform: translateX(-2px); filter: blur(0.5px); }
+    50% { transform: translateX(2px); filter: blur(0); }
+    75% { transform: translateX(-1px); filter: blur(0.3px); }
+    100% { transform: translateX(0); filter: blur(0); }
+}
+
+/* Screen glitch effect */
+.screen-glitch {
+    animation: screenGlitch 0.3s ease;
+}
+@keyframes screenGlitch {
+    0% { transform: translate(0); filter: hue-rotate(0deg); }
+    10% { transform: translate(-3px, 2px); filter: hue-rotate(90deg); }
+    20% { transform: translate(3px, -1px); filter: hue-rotate(180deg); }
+    30% { transform: translate(-2px, 1px); filter: hue-rotate(270deg); }
+    40% { transform: translate(2px, -2px); filter: hue-rotate(0deg); }
+    50% { transform: translate(-1px, 2px); filter: hue-rotate(45deg); }
+    60% { transform: translate(1px, -1px); filter: hue-rotate(0deg); }
+    100% { transform: translate(0); filter: hue-rotate(0deg); }
+}
+
+/* Yellow overlay for ending */
+#ending-overlay {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f5e6a0;
+    transition: background 3s ease;
+}
+.ending-content {
+    text-align: center;
+    padding: 40px;
+    max-width: 600px;
+}
+.ending-content h1 {
+    font-size: 32px;
+    color: #5a4a3a;
+    margin-bottom: 30px;
+}
+.ending-content p {
+    font-size: 16px;
+    color: #4a3a2a;
+    line-height: 2;
+    margin-bottom: 15px;
+}
+.ending-content .typewriter {
+    overflow: hidden;
+    border-right: 2px solid #5a4a3a;
+    white-space: nowrap;
+    animation: typing 3s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: #5a4a3a; }
+}
+
+/* Static noise overlay */
+.static-noise {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    z-index: 9998;
+    pointer-events: none;
+    opacity: 0.05;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+    animation: noiseAnim 0.2s steps(5) infinite;
+}
+@keyframes noiseAnim {
+    0% { transform: translate(0, 0); }
+    25% { transform: translate(-2px, 2px); }
+    50% { transform: translate(2px, -2px); }
+    75% { transform: translate(-2px, -2px); }
+    100% { transform: translate(2px, 2px); }
+}
+
+/* Fade to yellow */
+.fade-yellow {
+    animation: fadeYellow 5s ease forwards;
+}
+@keyframes fadeYellow {
+    0% { background: #f5f0e1; }
+    100% { background: #f5e6a0; }
+}
+
+/* Whisper text effect */
+.whisper {
+    color: #c4bba0;
+    font-size: 11px;
+    letter-spacing: 2px;
+    transition: color 2s ease;
+}
+.whisper.revealed {
+    color: #3a2a1a;
+}
+
+/* Corrupted text */
+.corrupted {
+    color: #8a3a3a;
+    font-weight: bold;
+}
+
+/* Blinking cursor */
+.cursor-blink::after {
+    content: '|';
+    animation: blink 1s step-end infinite;
+}
+@keyframes blink {
+    50% { opacity: 0; }
+}
